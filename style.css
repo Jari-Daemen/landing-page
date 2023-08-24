@@ -13,7 +13,7 @@ body {
 }
 
 
-.hero {
+.hero, .footer {
     background-color: #1f2937;
 }
 
@@ -37,3 +37,36 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+/* Hero stying */
+
+.heroleft {
+    border: 2px green;
+}
+
+/* Info section */
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Quote */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CTA */
+
+.card {
+    background-color: #3882f6;
+}
+
+.cardleft {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
