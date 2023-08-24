@@ -1,6 +1,11 @@
 /* Header ; Body (with 4 sub containers) ; footer */
 
 /* Full page styling*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -36,7 +41,7 @@ header {
     display: flex;
     font-size: 24px;
     justify-content: space-between;
-    padding-bottom: 48px;
+    padding: 16px 0 32px 0;
     width: 100%;
 }
 
@@ -77,6 +82,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-bottom: 32px;
 }
 
 button, .card {
@@ -99,7 +105,7 @@ button, .card {
 }
 
 .heroleft p {
-    margin: 0 0 16px 0;
+    margin: 8px 0 16px 0;
     overflow: hidden;
     width: 480px;
 }
