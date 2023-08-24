@@ -23,13 +23,12 @@ body {
 }
 
 .quotebg {
-    background-color: gray;
+    background-color: #e5e7eb;
 }
 
 header, .hero, .info, .quote, .card{
     margin: 0 10%;
 }
-
 
 
 /* Header styling */
@@ -85,7 +84,7 @@ header {
     padding-bottom: 32px;
 }
 
-button, .card {
+button, .card{
     background-color: #3882f6;
 }
 
@@ -137,6 +136,39 @@ h1 {
 .info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 32px 0 64px 0;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin: 0 0 32px 0;
+}
+
+.infoblocks {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.infoblocks img {
+    border: #3882f6 4px solid; 
+    border-radius: 16px;
+    height: auto;
+}
+
+.infoblocks p {
+    margin: 16px 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #2b2a28;
+}
+
+.infoblock {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
 }
 
 /* Quote */
@@ -149,6 +181,21 @@ h1 {
 .quote {
     display: flex;
     flex-direction: column;
+    height: 480px;
+    margin: 0 15%;
+    justify-content: center;
+}
+
+.quote p {
+    font-size: 36px;
+    color: #47505C;
+    margin: 0;
+}
+
+#author {
+    color: #2b2a28;
+    text-align: end;
+    padding-right: 2%;
 }
 
 /* CTA */
