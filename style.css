@@ -13,24 +13,49 @@ body {
 }
 
 
-.hero, .footer {
+.headerbg, .herobg, .footer {
     background-color: #1f2937;
 }
 
+.quotebg {
+    background-color: gray;
+}
+
+header, .hero, .info, .quote, .card{
+    margin: 0 10%;
+}
+
+
+
 /* Header styling */
+
+
 
 header {
     color: #f9faf8;
+    display: flex;
     font-size: 24px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
 }
 
 .navbar {
+    align-items: center;
     display: flex;
     justify-content: flex-start;
 }
 
 .navitem {
     border: 1px solid black;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-left: 48px;
+    
 }
 
 .content {
@@ -40,8 +65,26 @@ header {
 
 /* Hero stying */
 
+.herobg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .heroleft {
     border: 2px green;
+}
+
+h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
 }
 
 /* Info section */
@@ -53,6 +96,11 @@ header {
 
 /* Quote */
 
+.quotebg {
+    display: flex;
+    justify-content: center;
+}
+
 .quote {
     display: flex;
     flex-direction: column;
@@ -62,6 +110,9 @@ header {
 
 .card {
     background-color: #3882f6;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .cardleft {
