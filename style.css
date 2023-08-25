@@ -7,13 +7,12 @@
 }
 
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .container {
-    /* border: solid 2px red; */
     display: flex;
 }
 
@@ -45,8 +44,8 @@ header {
 }
 
 .logo {
-    width: 80px;
     height: 80px;
+    width: 80px;
 }
 
 .navbar {
@@ -90,8 +89,8 @@ a:hover {
 .hero {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding-bottom: 32px;
+    width: 100%;
 }
 
 .button, .card{
@@ -101,23 +100,22 @@ a:hover {
 .heroleft {
     display: flex;
     flex-direction: column;
+    height: 100%;
     max-width: 50%;
-    height: 100%;
-    height: 100%;
     min-width: 480px;
 }
 
 .button {
     border-radius: 8px;
-    max-width: 30%;
-    padding: 12px 24px;
-    width: 192px;
-    min-width: 192px;
-    height: 48px;
-    min-height: 48px;
     color: #f9faf8;
     font-size: 18px;
     font-weight: 800;
+    height: 48px;
+    max-width: 30%;
+    min-height: 48px;
+    min-width: 192px;
+    padding: 12px 24px;
+    width: 192px;
 }
 
 .button:hover {
@@ -125,33 +123,27 @@ a:hover {
     font-size: 20px;
 }
 
-
-
 .heroleft p {
     margin: 8px 0 16px 0;
     overflow: hidden;
     width: 480px;
 }
 
-
-
 .heroright {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .heroright img {
-    width: 100%;
-    height: auto;
     border-radius: 24px;
+    height: auto;
     width: 496px;
 }
 
 .heroright {
     overflow: hidden;
 }
-
 
 h1 {
     color: #f9faf8;
@@ -160,12 +152,13 @@ h1 {
     margin: 0;
 }
 
+
 /* Info section */
 
 .info {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 64px 0 96px 0;
 }
 
@@ -180,23 +173,20 @@ h1 {
     max-width: 100%;
 }
 
-
 .infoblocks img {
     border: #3882f6 4px solid; 
     border-radius: 16px;
-    height: auto;
     height: 408px;
     min-width: 260px;
 }
 
 .infoblocks p {
+    color: #2b2a28;
     margin: 16px 0 0 0;
     font-size: 24px;
     font-weight: 600;
-    text-align: center;
-    color: #2b2a28;
     overflow: hidden;
-
+    text-align: center;
 }
 
 .infoblock {
@@ -204,6 +194,7 @@ h1 {
     flex-direction: column;
     width: 22%;
 }
+
 
 /* Quote */
 
@@ -216,45 +207,46 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 480px;
-    margin: 0 15%;
     justify-content: center;
+    margin: 0 15%;
 }
 
 .quote p {
-    font-size: 36px;
     color: #47505C;
+    font-size: 36px;
     margin: 0;
     overflow: hidden;
 }
 
 #author {
     color: #2b2a28;
-    text-align: end;
-    padding-right: 2%;
     margin-top: 24px;
+    padding-right: 2%;
+    text-align: end;
 }
+
 
 /* CTA */
 
 .cta {
-    height: 480px;
     display: flex;
+    height: 480px;
 }
 
 .card {
+    border-radius: 8px;
     display: flex;
     justify-content: space-around;
-    width: 100%;
     margin: 112px 10%;
-    border-radius: 8px;
+    width: 100%;
 }
 
 .cardleft {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
     padding-left: 5vw;
+    width: 50%;
 }
 
 .cardleft h2 {
@@ -265,15 +257,15 @@ h1 {
 }
 
 .cardleft p {
-    font-size: 18px;
     color: #e5e7eb;
+    font-size: 18px;
     margin: 4px 0 0 0;
 }
 
 .cardright {
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
     padding-right: 6vw;
     width: 50%;
@@ -283,6 +275,7 @@ h1 {
     border: 3px solid #f9faf8;
     white-space: nowrap;
 }
+
 
 /* Footer */
 
