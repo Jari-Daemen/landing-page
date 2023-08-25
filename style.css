@@ -13,10 +13,12 @@ body {
 }
 
 .container {
-    border: solid 2px red;
+    /* border: solid 2px red; */
     display: flex;
 }
 
+
+/* Multiple section styling */
 
 .headerbg, .herobg, .footer {
     background-color: #1f2937;
@@ -31,9 +33,7 @@ header, .hero, .info, .quote, .card{
 }
 
 
-/* Header styling */
-
-
+/* Header-specific styling */
 
 header {
     color: #f9faf8;
@@ -55,20 +55,30 @@ header {
     justify-content: flex-start;
 }
 
-.navitem {
-    border: 1px solid black;
-    margin-left: 48px;
+a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 800;
 }
 
 .navitem, .heroleft p {
     color: #e5e7eb;
-    font-size: 18px;
+    font-size: 24px;
+    margin-left: 48px;
+}
+
+.navitem {
+    width: 88px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Hero stying */
 
@@ -84,7 +94,7 @@ header {
     padding-bottom: 32px;
 }
 
-button, .card{
+.button, .card{
     background-color: #3882f6;
 }
 
@@ -97,11 +107,25 @@ button, .card{
     min-width: 480px;
 }
 
-.heroleft button {
+.button {
     border-radius: 8px;
     max-width: 30%;
-    padding: 8px 16px;
+    padding: 12px 24px;
+    width: 192px;
+    min-width: 192px;
+    height: 48px;
+    min-height: 48px;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 800;
 }
+
+.button:hover {
+    background-color: #38aaf6;
+    font-size: 20px;
+}
+
+
 
 .heroleft p {
     margin: 8px 0 16px 0;
@@ -121,8 +145,13 @@ button, .card{
     width: 100%;
     height: auto;
     border-radius: 24px;
-    max-width: 448px;
+    width: 496px;
 }
+
+.heroright {
+    overflow: hidden;
+}
+
 
 h1 {
     color: #f9faf8;
@@ -137,7 +166,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px 0 64px 0;
+    padding: 64px 0 96px 0;
 }
 
 .info h2 {
@@ -151,10 +180,13 @@ h1 {
     max-width: 100%;
 }
 
+
 .infoblocks img {
     border: #3882f6 4px solid; 
     border-radius: 16px;
     height: auto;
+    height: 408px;
+    min-width: 260px;
 }
 
 .infoblocks p {
@@ -163,6 +195,8 @@ h1 {
     font-weight: 600;
     text-align: center;
     color: #2b2a28;
+    overflow: hidden;
+
 }
 
 .infoblock {
@@ -190,25 +224,76 @@ h1 {
     font-size: 36px;
     color: #47505C;
     margin: 0;
+    overflow: hidden;
 }
 
 #author {
     color: #2b2a28;
     text-align: end;
     padding-right: 2%;
+    margin-top: 24px;
 }
 
 /* CTA */
+
+.cta {
+    height: 480px;
+    display: flex;
+}
 
 .card {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin: 112px 10%;
+    border-radius: 8px;
 }
 
 .cardleft {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 5vw;
+}
+
+.cardleft h2 {
+    color: #f9faf8;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cardleft p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 4px 0 0 0;
+}
+
+.cardright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 6vw;
+    width: 50%;
+}
+
+.cardright .button {
+    border: 3px solid #f9faf8;
+    white-space: nowrap;
 }
 
 /* Footer */
+
+.footer {
+    align-items: center;
+    display: flex;
+    height: 112px;
+    justify-content: center;
+}
+
+.footer p {
+    color: #f9faf8;
+    font-size: 18px;
+}
